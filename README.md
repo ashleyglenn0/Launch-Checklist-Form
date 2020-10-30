@@ -1,1 +1,1 @@
-[See my live demo here]((https://ashleyglenn0.github.io/launch-checklist-form/));
+[See my live demo here]((https://ashleyglenn0.github.io/Launch-Checklist-Form/))
