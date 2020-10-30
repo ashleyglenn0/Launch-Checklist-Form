@@ -1,6 +1,5 @@
 // Write your JavaScript code here!
 window.addEventListener('load', function () {
-   //getMission();
    let form = document.querySelector('form');
    form.addEventListener('submit', function (event) {
       event.preventDefault();
@@ -78,9 +77,9 @@ window.addEventListener('load', function () {
 })
 
    
-//    });
 
-// })
+
+
 
 /* This block of code shows how to format the HTML once you fetch some planetary JSON!
 <h2>Mission Destination</h2>
