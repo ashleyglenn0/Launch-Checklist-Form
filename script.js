@@ -52,18 +52,23 @@ window.addEventListener('load', function () {
          launchStatus.style.color = 'green';
          pilotStatus.innerHTML = `Pilot ${pilotNameInput.value} is ready for launch`;
          copilotStatus.innerHTML = `Copilot ${copilotNameInput.value} is ready for launch`;
+         fuelStatus.innerHTML = 'Fuel level high enough for launch';
+         cargoStatus.innerHTML = 'Cargo mass okay for launch';
 
       }
 
    });
    //Put Fetch here
    let apiUrl = 'https://handlers.education.launchcode.org/static/planets.json';
-    
-   fetch(apiUrl).then(function(response){
-      response.json().then( function(json){
+
+   
+   //Line 65 and 66 up to 2nd open curly brace is the actual function syntax
+   
+   fetch(apiUrl).then(function (response) {
+      response.json().then(function (json) {
          ;
-         const index = Math.ceil(Math.random()*json.length) -1;
-      missionTarget.innerHTML =` <h2>Mission Destination</h2>
+         const index = Math.ceil(Math.random() * json.length) - 1;
+         missionTarget.innerHTML = ` <h2>Mission Destination</h2>
       <ol>
       <li>Name: ${json[index].name}</li>
       <li>Diameter: ${json[index].diameter}</li>
@@ -72,11 +77,11 @@ window.addEventListener('load', function () {
       <li>Number of Moons: ${json[index].moons}</li>
       </ol>
       <img src="${json[index].image}">`;
-   }); 
-});
+      });
+   });
 })
 
-   
+
 
 
 
