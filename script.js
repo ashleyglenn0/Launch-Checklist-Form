@@ -29,7 +29,7 @@ window.addEventListener('load', function () {
          pilotStatus.innerHTML = `Pilot ${pilotNameInput.value} is ready for launch`;
          copilotStatus.innerHTML = `Copilot ${copilotNameInput.value} is ready for launch`;
          fuelStatus.innerHTML = 'Fuel level too low for launch';
-         cargoStatus.innerHTML = 'Cargo mass too heavy to launch';
+         cargoStatus.innerHTML = 'Cargo mass too heavy for launch';
       } else if (cargoMass.value > 10000 && fuelLevel.value >= 10000) {
          faultyItems.style.visibility = 'visible';
          launchStatus.innerHTML = 'Shuttle Not Ready for Launch';
@@ -37,14 +37,14 @@ window.addEventListener('load', function () {
          pilotStatus.innerHTML = `Pilot ${pilotNameInput.value} is ready for launch`;
          copilotStatus.innerHTML = `Copilot ${copilotNameInput.value} is ready for launch`;
          fuelStatus.innerHTML = 'Fuel level high enough for launch';
-         cargoStatus.innerHTML = 'Cargo mass too heavy to launch';
+         cargoStatus.innerHTML = 'Cargo mass too heavy for launch';
       } else if (cargoMass.value <= 10000 && fuelLevel.value < 10000) {
          faultyItems.style.visibility = 'visible';
          launchStatus.innerHTML = 'Shuttle Not Ready for Launch';
          launchStatus.style.color = 'red';
          pilotStatus.innerHTML = `Pilot ${pilotNameInput.value} is ready for launch`;
          copilotStatus.innerHTML = `Copilot ${copilotNameInput.value} is ready for launch`;
-         fuelStatus.innerHTML = 'Fuel level too low to launch';
+         fuelStatus.innerHTML = 'Fuel level too low for launch';
          cargoStatus.innerHTML = 'Cargo mass okay for launch';
       } else {
          faultyItems.style.visibility = 'visible';
